@@ -7,12 +7,8 @@ This project has been developed as a bachelor degree thesis in computer engineer
 
 *Authors: Marco Scanu and Elisa Zilich*
 
-<br>
-
 *Supervisor: Prof. Alessio Merlo*
 
 ## Stand Up for Social Work
 
 This app has been designed for the people that have many free time and want to earn some money by helping others through the so called social works.
-
-### Overview
