@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.social.socialjobs">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".StartPageDrawer"
+            android:theme="@style/AppTheme.Dark">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".LoginPageDrawer"
+            android:theme="@style/AppTheme.Dark">
+        </activity>
+        <activity
+            android:name=".RegistrationPageDrawer"
+            android:theme="@style/AppTheme.Dark">
+        </activity>
+        <activity
+            android:name=".HomePageDrawer"
+            android:theme="@style/AppTheme.Dark">
+        </activity>
+        <activity
+            android:name=".profilo.ProfiloDrawer"
+            android:theme="@style/AppTheme.Dark">
+        </activity>
+        <activity
+            android:name=".LoadingPageDrawer"
+            android:theme="@style/AppTheme.Dark">
+        </activity>
+        <activity
+            android:name=".profilo.UpdateProfile"
+            android:parentActivityName=".profilo.ProfiloDrawer"
+            android:theme="@style/AppTheme.Dark">
+        </activity>
+        <activity
+            android:name=".WorkerListDrawer"
+            android:theme="@style/AppTheme.Dark">
+        </activity>
+        <activity
+            android:name=".prenotazioni.PrenotazioniDrawer"
+            android:theme="@style/AppTheme.Dark">
+        </activity>
+        <activity
+            android:name=".lavori.FormAggiuntaLavoro"
+            android:theme="@style/AppTheme.Dark">
+        </activity>
+        <activity
+            android:name=".prenotazioni.AddReservation"
+            android:theme="@style/AppTheme.Dark">
+        </activity>
+        <activity
+            android:name=".InfoPanel"
+            android:theme="@style/AppTheme.Dark.Dialog">
+        </activity>
+        <activity
+            android:name=".lavori.LavoriDrawer"
+            android:theme="@style/AppTheme.Dark">
+        </activity>
+    </application>
+</manifest>

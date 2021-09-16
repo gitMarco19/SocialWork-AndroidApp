@@ -1,0 +1,69 @@
+<resources>
+    <!-- Nome app -->
+    <string name = "app_name">Stand Up For Social Work</string>
+
+    <!-- nomi che servono per la creazione del menu -->
+    <string name = "navigation_drawer_open">Open navigation drawer</string>
+    <string name = "navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- nomi del menu -->
+    <string name = "home">Home</string>
+    <string name = "profilo">Profilo</string>
+    <string name = "lavori">I miei Lavori</string>
+    <string name = "prenotazioni">Le mie Prenotazioni</string>
+    <string name = "logout">Logout</string>
+
+    <!-- nomi del login -->
+    <string name = "email">Email</string>
+    <string name = "password">Password</string>
+    <string name = "login">Login</string>
+    <string name = "reg">Non hai ancora un account?</string>
+    <string name = "accReg">Registrati</string>
+    <string name = "logSuccess">Login avvenuto correttamente!</string>
+    <string name = "logFailed">Login fallito!</string>
+
+    <!-- nomi della registrazione -->
+    <string name = "nome">Nome</string>
+    <string name = "cognome">Cognome</string>
+    <string name = "city">Città</string>
+    <string name = "rePassword">Reinserire la Passowrd</string>
+    <string name = "registrati">Crea Account</string>
+    <string name = "log">Hai già un account?</string>
+    <string name = "access">Accedi</string>
+    <string name = "regSuccess">Account creato correttamente!</string>
+    <string name = "regFailed">Registrazione fallita!</string>
+
+    <!-- nomi errore -->
+    <string name = "nome_error">Nome obbligatorio</string>
+    <string name = "cognome_error">Cognome obbligatorio</string>
+    <string name = "email_error">Indirizzo email obbligatorio</string>
+    <string name = "city_error">Città obbligatoria</string>
+    <string name = "password_error">Password obbligatoria</string>
+    <string name = "invalid_email">Indirizzo email non valido</string>
+    <string name = "invalid_password">La password deve avere un minimo di 6 caratteri</string>
+    <string name = "invalid_rePass">Le password non coincidono</string>
+    <string name = "disp_email">Indirizzo email non disponibile</string>
+    <string name = "err_email">Indirizzo email errato</string>
+
+    <!-- nomi dell'header menu -->
+    <string name = "nomeCognome">Nome Cognome</string>
+
+    <!-- nomi dell'home page -->
+    <string name = "babysitter">Babysitter</string>
+    <string name = "dogsitter">Dogsitter</string>
+    <string name = "colf">Collaboratore domestico</string>
+    <string name = "infermiere">Infermiere</string>
+    <string name = "badante">Badante</string>
+    <string name = "commissioni">Commissioni</string>
+    <string name = "compagnia">Compagnia per anziani o disabili</string>
+    <string name = "ripetizioni">Ripetizioni</string>
+    <string name = "cerca">Cerca</string>
+
+    <!-- nomi della pagina prenotazioni/lavori -->
+    <string name="tab_text_1">Appuntamenti</string>
+    <string name="tab_text_2">Richieste da confermare</string>
+    <string name="tab_text_3">Proposte inviate</string>
+
+    <string name="default_font" translatable="false">casual</string>
+
+</resources>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:padding="16dp"
+            android:text="Modifica il profilo"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/activity_update"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:scrollbars = "none">
+
+        <LinearLayout
+            android:id="@+id/upload_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/copertina"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sfondo"
+                    android:clickable="true"/>
+
+                <ImageButton
+                    android:id="@+id/updateBackgroundImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/shape_round"
+                    android:src="@drawable/icons8_edit_30" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_below="@id/copertina"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-90dp"/>
+
+                <ImageButton
+                    android:id="@+id/updateProfImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="230dp"
+                    android:layout_marginTop="160dp"
+                    android:background="@drawable/shape_round"
+                    android:src="@drawable/icons8_edit_30" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nome">
+            </TextView>
+
+            <EditText
+                android:id="@+id/nome"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:maxLength="30"
+                android:layout_marginBottom="10dp">
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cognome">
+            </TextView>
+
+            <EditText
+                android:id="@+id/cognome"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:maxLength="30"
+                android:layout_marginBottom="10dp">
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/city">
+            </TextView>
+
+            <EditText
+                android:id="@+id/citta"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:maxLength="30"
+                android:layout_marginBottom="10dp">
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cellulare">
+            </TextView>
+
+            <EditText
+                android:id="@+id/cell"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:maxLength="15"
+                android:layout_marginBottom="10dp">
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parlaci di te">
+            </TextView>
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/descrizione"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:minLines="2"
+                android:maxLines="8"
+                android:scrollbars="vertical"
+                android:inputType="textMultiLine"
+                android:maxLength="225"
+                android:layout_marginBottom="10dp">
+            </EditText>
+            </ScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Che servizi vuoi offrire?">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="5dp">
+
+                    <CheckBox
+                        android:id="@+id/checkBoxServizi0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Babysitter">
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/checkBoxServizi1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Badante">
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/checkBoxServizi2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Collaboratore\ndomestico">
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/checkBoxServizi5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Commissioni">
+                    </CheckBox>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="5dp">
+
+                    <CheckBox
+                        android:id="@+id/checkBoxServizi6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Compagnia\nanziani/disabili">
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/checkBoxServizi3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DogSitter">
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/checkBoxServizi4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Infermiere">
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/checkBoxServizi7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ripetizioni">
+                    </CheckBox>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/saveMod"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Salva"
+                    android:layout_marginBottom="5dp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

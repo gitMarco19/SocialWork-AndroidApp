@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "693098814131",
+    "firebase_url": "https://tesiapp.firebaseio.com",
+    "project_id": "tesiapp",
+    "storage_bucket": "tesiapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693098814131:android:5cecf8040dfdd84eea6ec6",
+        "android_client_info": {
+          "package_name": "com.social.socialjobs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "693098814131-mh6ohp86uhl8d89ug4kq324pm17dlokj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.social.socialjobs",
+            "certificate_hash": "4f14e12bbb8865f3fa8a079393d2ce22e7052b0a"
+          }
+        },
+        {
+          "client_id": "693098814131-uj6fvuorniuiia3tofripkbim2uk5uf7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSlQluD82mPdQfD9ne-xz-re1DHvNnrrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "693098814131-uj6fvuorniuiia3tofripkbim2uk5uf7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

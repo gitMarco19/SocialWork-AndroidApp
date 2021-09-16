@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Serve per il menu -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Aggiungi un impegno di lavoro!"
+            android:textSize="20sp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:id="@+id/activity_lavoro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <!-- Name Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/name_err"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:errorTextAppearance="@style/Error">
+                <EditText android:id="@+id/input_nome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Nome cliente"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Cognome Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/cognome_err"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:errorTextAppearance="@style/Error">
+                <EditText android:id="@+id/input_cognome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Cognome cliente" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--  Email Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email_err"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:errorTextAppearance="@style/Error">
+                <EditText android:id="@+id/input_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email cliente" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- City Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/address_err"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:errorTextAppearance="@style/Error">
+                <EditText android:id="@+id/input_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="@string/city" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seleziona un servizio"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"/>
+            <Spinner
+                android:id="@+id/spinner_lavori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:popupBackground="@color/primary_dark" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frequenza di impegno"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/occ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Occasionale" />
+
+                <RadioButton
+                    android:id="@+id/sett"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Settimanale" />
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proponi un orario"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView android:id="@+id/input_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_calendar"
+                android:hint=" Data inizio "
+                android:textSize="18sp"/>
+
+            <TextView android:id="@+id/input_orario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/ic_time"
+                android:hint=" Orario inizio "
+                android:textSize="18sp"/>
+
+            <TextView android:id="@+id/input_orario2_sett"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/ic_time"
+                android:hint=" Orario fine "
+                android:textSize="18sp"/>
+
+
+            <LinearLayout
+                android:id="@+id/layoutSettimana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:orientation="vertical">
+
+
+                    <CheckBox
+                        android:id="@+id/lun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lunedì"/>
+                    <CheckBox
+                        android:id="@+id/mar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Martedì"/>
+                    <CheckBox
+                        android:id="@+id/mer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mercoledì"/>
+                    <CheckBox
+                        android:id="@+id/gio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Giovedì"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+                    <CheckBox
+                        android:id="@+id/ven"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Venerdì"/>
+                    <CheckBox
+                        android:id="@+id/sab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sabato"/>
+                    <CheckBox
+                        android:id="@+id/dom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Domenica"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView android:id="@+id/input_data2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_calendar"
+                android:hint=" Data fine "
+                android:textSize="18sp"/>
+
+
+            <TextView android:id="@+id/input_orario2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/ic_time"
+                android:layout_marginTop="10dp"
+                android:hint=" Orario fine "
+                android:textSize="18sp"/>
+
+            <!-- Add Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAdd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:padding="12dp"
+                android:text="Aggiungi"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
