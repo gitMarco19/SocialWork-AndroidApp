@@ -1,5 +1,5 @@
 # Bachelor degree thesis
-This project has been developed as a bachelor degree thesis in computer engineering at the ***University of Genova***.
+This project has been developed as a bachelor degree thesis in *computer engineering* at the ***University of Genova***.
 
 <p align = "center">
 	<img width = "300px" src = "./screenshots/logoUnige.png"/>
@@ -11,4 +11,4 @@ This project has been developed as a bachelor degree thesis in computer engineer
 
 ## Stand Up for Social Work
 
-This app has been designed for the people that have many free time and want to earn some money by helping others through the so called social works.
+This ***android app*** has been designed for the people that have some free time and want to earn some money by helping others through the so called social works.
